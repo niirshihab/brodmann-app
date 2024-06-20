@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+
+.left-section, .right-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.left-section {
+  background-color: #c43636;
+  color: #fff;
+  text-align: center;
+}
+
+.left-section .logo {
+  width: 120px; /* Adjust size as needed */
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+.left-section h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.left-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.left-section .deliverable {
+  width: 80%;
+  max-width: 400px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.left-section p {
+  font-size: 1rem;
+}
+
+.right-section {
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 2rem;
+}
+
+.right-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.form {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.form label {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.form input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 0.25rem;
+}
+
+.form button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #c43636;
+  color: #fff;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form button:hover {
+  background-color: #a12e2e;
+}
+
+.back-link, .forgot-password-link {
+  display: block;
+  margin-top: 1rem;
+  text-align: center;
+  color: #c43636;
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+.password-container {
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #c43636;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    flex-wrap: nowrap;
+  }
+
+  .left-section, .right-section {
+    flex: 1;
+    height: 100vh;
+  }
+}
